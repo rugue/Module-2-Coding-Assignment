@@ -3,21 +3,117 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 p {
   border: 1px solid black;
-  background-color: #A52A2A;
+  background-color: gray;
   width: 90%;
-  height: 150px;
+  height: 230px;
   margin-right: auto;
   margin-left: auto;
-  font-family: Helvetica;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+}
+
+.chicken{
+  width: 120px;
+  border: 1px solid black;
+  background-color: #EE7E50;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: black;
+}
+
+.beef{
+  width: 120px;
+  border: 1px solid black;
+  background-color: #A52A2A;
+  position: absolute;
+  top: 0%;
+  right: 0%;
   color: white;
+}
+
+.sushi{
+  width: 120px;
+  border: 1px solid black;
+  background-color: #DEB887;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: black;
+}
+
+.rugue{
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 20px;
 }
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .Section1-lg, .Section2-lg, .Section3-lg{
+    float: left;
+	border: 1px solid white;
+    
+  }
+  .Section1-lg{
+	width: 33.33%;
+  }
+  .Section2-lg {
+    width: 33.33%;
+  }
+  .Section3-lg {
+	width: 33.33%
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .Section1-md, .Section2-md, .Section3-md{
+    float: left;
+    border: 1px solid white;
+  }
+  .Section1-md {
+    width: 47%;
+	margin-left: 24px;
+  }
+  .Section2-md {
+    width: 47%;
+	margin-right: 10px;
+  }
+  .Section3-md{
+	width: 100%;
+  }
+}
+  
+  /********** Small devices only **********/
+@media (max-width: 767px) {
+  .Section1-sm, .Section2-sm, .Section3-sm{
+    float: left;
+    border: 1px solid white;
+  }
+  .Section1-sm {
+    width: 100%;
+  }
+  .Section2-sm {
+    width: 100%;
+  }
+  .Section3-sm{
+	width: 100%
+  }
+  }
